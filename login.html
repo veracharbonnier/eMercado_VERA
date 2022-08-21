@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <script src="js/login.js"></script>
   <style>
     body {
       background-color: rgb(248, 249, 250);
@@ -19,10 +20,25 @@
 <body>
   <main class="mt-5">
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+      <img src="img\login.png" id="e-mercado-logo">
+            <div class="signin">
+              <div class="square">
+        <h1><strong>Inicio de sesión</strong></h1>
+      <p>
+      <br>
+      <label for="email" class="form-label">Email<input type="email" id="email" name="email" class="form-control"></label>
+      <br>
+      <div class="col-sm-6">
+        <label for="password" class="form-label">Contraseña<input type="password" id="password" name="contraseña" class="form-control"></label>
       </div>
-    </div>
+      <br>
+      
+      <button class="btn btn-primary"  type="button" id="login-button">Ingresar</button>
+      <br>
+      <br>
+      Si no estás registrado, <a href= "http://192.168.1.14:5555/login.html">haz click aquí para registrarte</a> <!--Idealmente aqui iria un formulario de registro-->
+     </p></div>
+  </div>
   </main>
   <footer class="text-muted">
     <div class="container">
@@ -34,7 +50,23 @@
       <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
     </div>
   </footer>
-  <script src="js/login.js"></script>
+
+  <div class="alert alert-success alert-dismissible fade" role="alert" id="alert-success">
+    <p>Datos guardados correctamente</p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <div class="alert alert-danger alert-dismissible fade" role="alert" id="alert-danger">
+    <p>Los datos ingresados no cumplen con los requisitos solicitados</p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <style>
+    .error{
+      border-color: red;
+      background-color: darkred;
+    }
+  </style>
 </body>
 
 </html>
