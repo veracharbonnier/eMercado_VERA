@@ -26,8 +26,8 @@
   </style>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+<body style="background-color:#e0c271">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1" id="menu">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav w-100 justify-content-between">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link active" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="categories.html">Categorías</a>
@@ -46,14 +46,113 @@
           </li>
           <li class="nav-item">
           </li>
-        </ul>
-      </div>
-    </div>
+          <li class="nav-item">
+            <a class="nav-link active" id="profile"><span id="input"></span></a>
+   <ul>
+   <li class="nav-item"></li><a class="nav-link" href= "cart.html">Mi carrito</a></li>
+   <li class="nav-item"></li><a class="nav-link" href="my-profile.html">Mi perfil</a></li>
+   <li class="nav-item"></li><a class="nav-link" id= "bye-bye" href="login.html">Cerrar sesión</a></li>
+   </ul>
+   </li>
+  </ul>
   </nav>
+    </div>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+  
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-9">
+            <br>
+            <br>
+            <h2 class="text-white mb-4">Perfil
+                           <img id="fotitoUsuario"  class="img-thumbnail" style="float:right"   src="images (3).jpg"></img>
+            </h2>
+                        <br>
+            <hr>
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body">
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-md-6">
+                    <label for="name1" class="form-label">Primer nombre*</label>
+                    <input type="text" class="form-control" id="name1" placeholder="Juancito" required>
+ </div>
+ <div class="valid-feedback">
+  Bien
+</div>
+<div class="invalid-feedback">
+  Ingresa tu nombre.
+</div>
+
+<div class="col-md-6">
+ <label for="name2" class="form-label">Segundo nombre</label>
+<input type="text" class="form-control" id="name2" placeholder="Martín"required>
+ </div>
+
+ <div class="col-md-6">
+  <label for="lastname1" class="form-label">Primer apellido*</label>
+<input type="text" class="form-control" id="lastname1" placeholder="Pérez"required>
+ </div>
+ <div class="valid-feedback">
+  Bien
+</div>
+<div class="invalid-feedback">
+  Ingresa tu apellido.
+</div>
+ 
+ <div class="col-md-6">
+<label for="lastname2" class="form-label">Segundo apellido</label>
+ <input type="text" class="form-control" id="lastname2" placeholder="Rodríguez"required>
+  </div>
+                  <div class="col-md-6" id="miUsuario">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="inputEmail" placeholder="juancito@gmail.com" value="" required>
+                  </div>
+                  <div class="valid-feedback">
+                    Bien
+                  </div>
+                  <div class="invalid-feedback">
+                    Ingresa tu email.
+                  </div>
+
+                  <div class="col-md-3">
+                  <label for="codigopais"class="form-label">Código de país</label>
+                  <select class="form-select" id="codigopais">
+                    <option selected value="1" id="uruguay">Uruguay (+598)</option>
+                    <option value="2">Brasil (+55)</option>
+                    <option value="3">Argentina (+54)</option>
+                    <option value="3">Chile (+56)</option>
+                    <option value="3">Paraguay (+595)</option>
+                  </select>
+                </div>
+                  <div class="col-md-3">
+                    <label for="telefono" class="form-label">Teléfono de contacto*</label>
+                    <input type="number" class="form-control" id="telefono" placeholder="099123456"required>
+                  </div>
+                  <div class="valid-feedback">
+                    Bien
+                  </div>
+                  <div class="invalid-feedback">
+                    Ingresa tu teléfono.
+                  </div>
+                                 <div class="col-md-9">
+                                  <label for="perfilimg" class="form-label">Imagen de perfil</label>
+                    <input type="file" class="form-control" id="perfilimg" placeholder="juancito.jpg">
+                    
+                  </div>
+                  
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                  </div>
+                </form>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="alert alert-warning alert-dismissible fade" role="alert" id="warning">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+      <div>
+        Debes iniciar sesión
       </div>
     </div>
   </main>

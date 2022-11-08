@@ -12,8 +12,8 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+<body style="background-color:#e0c271">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1" id="menu">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,21 +22,29 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav w-100 justify-content-between">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link active" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="categories.html">Categorías</a>
+            <a class="nav-link" href="categories.html">Categorías</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
           <li class="nav-item">
           </li>
-        </ul>
-      </div>
-    </div>
+          <li class="nav-item">
+            <a class="nav-link active" id="profile"><span id="input"></span></a>
+   <ul>
+   <li class="nav-item"></li><a class="nav-link" href= "cart.html">Mi carrito</a></li>
+   <li class="nav-item"></li><a class="nav-link" href="my-profile.html">Mi perfil</a></li>
+   <li class="nav-item"></li><a class="nav-link" id= "bye-bye" href="login.html">Cerrar sesión</a></li>
+   </ul>
+   </li>
+  </ul>
   </nav>
+    </div>
   <main class="pb-5">
+    <section style="background-color: #e0c271">
     <div class="text-center p-4">
       <h2>Categorías</h2>
       <p class="lead">Verás aquí todas las categorías del sitio.</p>
@@ -46,11 +54,11 @@
         <div class="col text-end">
           <div class="btn-group btn-group-toggle mb-4" data-bs-toggle="buttons">
             <input type="radio" class="btn-check" name="options" id="sortAsc">
-            <label class="btn btn-light" for="sortAsc">A-Z</label>
+            <label class="btn btn-dark active" for="sortAsc">A-Z</label>
             <input type="radio" class="btn-check" name="options" id="sortDesc">
-            <label class="btn btn-light" for="sortDesc">Z-A</label>
+            <label class="btn btn-dark" for="sortDesc">Z-A</label>
             <input type="radio" class="btn-check" name="options" id="sortByCount" checked>
-            <label class="btn btn-light" for="sortByCount"><i class="fas fa-sort-amount-down mr-1"></i></label>
+            <label class="btn btn-dark" for="sortByCount"><i class="fas fa-sort-amount-down mr-1"></i></label>
           </div>
         </div>
       </div>
@@ -68,18 +76,20 @@
             </div>
             <div class="col-3 p-0">
               <div class="btn-group" role="group">
-                <button class="btn btn-light btn-block" id="rangeFilterCount">Filtrar</button>
-                <button class="btn btn-link btn-sm" id="clearRangeFilter">Limpiar</button>
+                <button class="btn btn-primary btn-block" id="rangeFilterCount">Filtrar</button>
+                <button class="btn btn-dark" id="clearRangeFilter">Limpiar</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
       <div class="row">
         <div class="list-group" id="cat-list-container">
         </div>
       </div>
     </div>
+  
   </main>
   <footer class="text-muted">
     <div class="container">
@@ -102,6 +112,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/categories.js"></script>
+
 </body>
 
 </html>

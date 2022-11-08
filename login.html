@@ -9,36 +9,139 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <script src="js/login.js"></script>
-  <style>
-    body {
-      background-color: rgb(248, 249, 250);
-    }
-  </style>
+  
 </head>
 
-<body>
-  <main class="mt-5">
-    <div class="container">
-      <img src="img\login.png" id="e-mercado-logo">
-            <div class="signin">
-              <div class="square">
-        <h1><strong>Inicio de sesión</strong></h1>
-      <p>
-      <br>
-      <label for="email" class="form-label">Email<input type="email" id="email" name="email" class="form-control"></label>
-      <br>
-      <div class="col-sm-6">
-        <label for="password" class="form-label">Contraseña<input type="password" id="password" name="contraseña" class="form-control"></label>
+<body style="background-color: #eee;">
+ <main class="mt-5">
+
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-12 col-xl-11">
+          <div class="card text-black" style="border-radius: 25px;">
+            <div class="card-body p-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+  
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Inicio de sesión</p>
+  
+                  <form class="mx-1 mx-md-4">
+  
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" id="email" class="form-control" />
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label class="form-label" for="password">Conrtraseña</label>
+                        <input type="password" id="password" class="form-control" />
+                      
+                      </div>
+                    </div>
+
+                    <div class="form-check d-flex justify-content-center mb-5">
+                     <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Si no estás registrado haz click aquí para registrarte </button> </p>
+                      </div>
+                    
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Formulario de registro</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-12">
+      <label for="validationCustom01" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="validationCustom01" value="" required>
+      <div class="valid-feedback">
+        Looks good!
       </div>
-      <br>
-      
-      <button class="btn btn-primary"  type="button" id="login-button">Ingresar</button>
-      <br>
-      <br>
-      Si no estás registrado, <a href= "http://192.168.1.14:5555/login.html">haz click aquí para registrarte</a> <!--Idealmente aqui iria un formulario de registro-->
-     </p></div>
+    </div>
+    <div class="col-md-12">
+      <label for="validationCustom02" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="validationCustom02" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-12">
+      <label for="validationCustomUsername" class="form-label">Correo electrónico</label>
+      <div class="input-group has-validation">
+        <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <label for="validationCustom03" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-12">
+      <label for="validationCustom04" class="form-label">Confirmar contraseña</label>
+      <input type="password" class="form-control" id="validationCustom04" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <br>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Acepto los términos y condiciones
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Registrarme</button>
   </div>
+</form>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ya tengo una cuenta</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+  <button type="button" class="btn btn-primary btn-lg" id="login-button">Ingresar</button>
+</div>
+
+</form>
+
+</div>
+<div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+<img src="img\login.png"
+class="img-fluid" alt="Sample image">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+                  
+
+                    
   </main>
   <footer class="text-muted">
     <div class="container">
@@ -57,7 +160,7 @@
   </div>
 
   <div class="alert alert-danger alert-dismissible fade" role="alert" id="alert-danger">
-    <p>Los datos ingresados no cumplen con los requisitos solicitados</p>
+    <p>Debes ingresar tus datos para iniciar sesión</p>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
@@ -67,6 +170,8 @@
       background-color: darkred;
     }
   </style>
+  <script src="js/login.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

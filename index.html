@@ -11,8 +11,8 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+<body style="background-color:#e0c271">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1" id="menu">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,10 +32,14 @@
           <li class="nav-item">
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="login.html">Cerrar sesión</a> <!--Agregue este boton, que luego deberia configurarse para realmente cerrar sesion, ahora es de mentira :P-->
-        </ul>
-      </div>
-    </div>
+            <a class="nav-link active" id="profile"><span id="input"></span></a>
+   <ul>
+   <li class="nav-item"></li><a class="nav-link" href= "cart.html">Mi carrito</a></li>
+   <li class="nav-item"></li><a class="nav-link" href="my-profile.html">Mi perfil</a></li>
+   <li class="nav-item"></li><a class="nav-link" id= "bye-bye" href="login.html">Cerrar sesión</a></li>
+   </ul>
+   </li>
+  </ul>
   </nav>
   <main>
     <div class="jumbotron text-center"></div>
