@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>eMercado - Todo lo que busques está aquí</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/font-awesome.min.css">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9132b90a11.js" crossorigin="anonymous"></script>
 </head>
 
 <body style="background-color:#e0c271">
@@ -62,6 +63,16 @@
           </div>
         </div>
       </div>
+      <div>
+        <div class="form-floating mb-3">
+       <label for="inputBuscar"style="background-color:white position:relative; top:-10px;"><i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+       </label> 
+       <input type="search" name="inputBuscar" id="inputBuscar" style="height: 30px;" placeholder="Busca tu categoría" class="form-control col align-self-end" > </div>
+     <br>
+     <br>
+ 
+    </div>
+
       <div class="row">
         <div class="col-lg-6 offset-lg-6 col-md-12 mb-1 container">
           <div class="row container p-0 m-0">
@@ -78,12 +89,15 @@
               <div class="btn-group" role="group">
                 <button class="btn btn-primary btn-block" id="rangeFilterCount">Filtrar</button>
                 <button class="btn btn-dark" id="clearRangeFilter">Limpiar</button>
-              </div>
+                <br>
+                          </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+  
       <div class="row">
         <div class="list-group" id="cat-list-container">
         </div>
