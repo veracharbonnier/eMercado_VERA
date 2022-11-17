@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body style="background-color:#e0c271">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1" id="menu">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sell.html">Vender</a>
+          </li>
+          <li class="nav-item">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="profile"><span id="input"></span></a>
+   <ul>
+   <li class="nav-item"></li><a class="nav-link" href= "cart.html">Mi carrito</a></li>
+   <li class="nav-item"></li><a class="nav-link" href="my-profile.html">Mi perfil</a></li>
+   <li class="nav-item"></li><a class="nav-link" id= "bye-bye" href="login.html">Cerrar sesión</a></li>
+   </ul>
+   </li>
+  </ul>
+  </nav>
+    </div>
+  <main>
+    <div class="container" id="miCarrito">
+   <br><h1> Carrito de compras </h1>
+   <br><br>
+   <h4> Artículos a comprar</h4><br>
+   <table id="cartProducts">
+    <td>  </td>
+    <td>Nombre</td>
+    <td>Costo</td>
+    <td>Cantidad</td>
+    <td>Subtotal</td>
+
+   </table>
+   
+<br>
+<br>
+
+<div class="container" id="envio">
+   <h4> Tipo de envío</h4>
+   <div class="form-check">
+  <input class="form-check-input" type="radio" name="envio" id="envioPremium" required>
+  <label class="form-check-label" for="envioPremium">
+    Premium 2 a 5 días (15%)
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="envio" id="envioExpress" required>
+  <label class="form-check-label" for="envioExpress">
+    Express 5 a 8 días (7%)
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="envio" id="envioStandard" required>
+  <label class="form-check-label" for="envioStandard">
+    Standard 12 a 15 días (5%)
+  </label>
+</div>
+
+<span id="envioError"></span>
+</div>
+
+<br>
+<br>
+ 
+
+   <h4> Dirección de envío</h4>
+   <br>
+   <form class="row g-3 needs-validation" id="datosEnvio" novalidate>
+ <div class="row g-3">
+    <div class="col-md-6">
+      <label for="inputAddress" class="form-label">Dirección</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Abbey Road" value="" required>
+      <span id="addressError"></span>
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+      <div class="invalid-feedback">
+        Por favor, ingresa tu dirección.
+      </div>
+    </div> 
+    <div class="col-md-2">
+      <label for="inputDoorNr" class="form-label">Número de puerta</label>
+      <input type="number" class="form-control" id="inputDoorNr" value= "" min="1" max="10000" placeholder= "4" required>
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+      <div class="invalid-feedback">
+        Proporciona tu número de puerta.
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="inputCorner" class="form-label">Esquina</label>
+      <input type="text" class="form-control" id="inputCorner" placeholder="Westminster"value="" required>
+      <span id="cornerError"></span>
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+      <div class="invalid-feedback">
+        Por favor, ingresa la esquina de tu domicilio.
+      </div>
+    </div>
+   
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Ciudad</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Liverpool"value="" required>
+      <span id="cityError"></span>
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+      <div class="invalid-feedback">
+        Por favor, ingresa tu ciudad.
+      </div>
+    </div>
+    <br>
+    
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Departamento</label>
+      <select id="inputState" class="form-select" required>
+        <option selected>Elige tu departamento</option>
+        <option>Artigas</option>
+        <option>Canelones</option>
+        <option>Cerro Largo</option>
+        <option>Colonia</option>
+        <option>Durazno</option>
+        <option>Flores</option>
+        <option>Florida</option>
+        <option>Lavalleja</option>
+        <option>Maldonado</option>
+        <option>Montevideo</option>
+        <option>Paysandú</option>
+        <option>Río Negro</option>
+        <option>Rivera</option>
+        <option>Rocha</option>
+        <option>Salto</option>
+        <option>San José</option>
+        <option>Soriano</option>
+        <option>Tacuarembó</option>
+        <option>Treinta y Tres</option>
+      </select>
+      <span id="stateError"></span>
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+      <div class="invalid-feedback">
+        Por favor, selecciona tu departamento.
+      </div>
+    </div>
+    <br>
+    <br>
+    
+    <div class="container" id="costos">
+      <hr class="mb-4">
+      <h4 class="mb-3">Costos</h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0" style="text-align: left">Subtotal</h6>
+            <small class="text-muted"> Costo unitario del producto por cantidad</small>
+          </div>
+          <span class="text-muted" id="productCostText">USD 15200</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0"style="text-align: left">Costo de envío</h6>
+            <small class="text-muted">Según el tipo de envío</small>
+          </div>
+          <span class="text-muted" id="envioText">-</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total ($)</span>
+          <strong id="totalCostText">-</strong>
+        </li>
+      </ul>
+      </div>
+</div>
+<br>
+    <br>
+    <hr>
+    <br>
+<div class="container" id="formaDePago">
+  <h4>Forma de Pago</h4>
+  <p id="metodo"> Método seleccionado: <span id="payMeth"></span>
+<button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal">
+  Seleccionar
+  </button>
+  <br>
+<span id="pagoError"></span></p>
+  </div>
+  <br>
+
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Forma de Pago</h5><hr>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <input id="credito" type="radio" class="form-check-input" name="pago" value="Tarjeta de Crédito"> Tarjeta de crédito <br><hr>
+                   Número de tarjeta <br> <input type="number" id="cardNumb" class="form-control" required minlength="14" maxlength="16">
+                   Código de seg. <br> <input type="number" id="secCode" class="form-control" minlength="3" maxlength="4" required><br>
+                  Vencimiento (MM/AA) <br> <input type="date" id="venc" class="form-control" required min="2022-10-31" max="2032-12-31" ><br>
+   <input id="transferencia" type="radio" class="form-check-input" name="pago" value="Transferencia Bancaria"> Transferencia bancaria<br><hr>
+   Número de cuenta <br> <input type="number" id="accountNumb" class="form-control" required>
+        </div>
+        <div class="modal-footer">
+          <span id="errorPago"></span>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <br>
+    <br>
+    <div class="d-grid gap-2">
+      <button class="btn btn-primary" type="button" id="comprar">Finalizar la compra</button>
+    </div>
+    
+ </form>
+</div>
+</div>
+<br>
+<hr>
+<div class="alert alert-success alert-dismissible fade" role="alert" id="alert-success">
+  <strong>¡Has comprado con éxito!</strong>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="alert alert-primary alert-dismissible fade" role="alert" id="alertaCredito">
+  Completa los datos de tu tarjeta de crédito
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="alert alert-primary alert-dismissible fade" role="alert" id="alertaBanco">
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  Completa los datos de tu cuenta bancaria
+  
+</div>
+    <br>
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
+        2022</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+
+</html>

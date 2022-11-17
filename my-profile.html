@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color:#e0c271">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1" id="menu">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sell.html">Vender</a>
+          </li>
+          <li class="nav-item">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="profile"><span id="input"></span></a>
+   <ul>
+   <li class="nav-item"></li><a class="nav-link" href= "cart.html">Mi carrito</a></li>
+   <li class="nav-item"></li><a class="nav-link" href="my-profile.html">Mi perfil</a></li>
+   <li class="nav-item"></li><a class="nav-link" id= "bye-bye" href="login.html">Cerrar sesión</a></li>
+   </ul>
+   </li>
+  </ul>
+  </nav>
+    </div>
+  <main>
+  
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-9">
+            <br>
+            <br>
+            <h2 class="text-black mb-4">Perfil &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           <img id="fotitoUsuario"  class="img-thumbnail" style="float:right 70px"   src="beautiful-latin-woman-avatar-character-icon-free-vector.jpg"></img>
+            </h2>
+            <hr>
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body">
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-md-6">
+                    <label for="name1" class="form-label">Primer nombre*</label>
+                    <input type="text" class="form-control" id="name1" placeholder="Juancito" required>
+ </div>
+ <div class="valid-feedback">
+  Bien
+</div>
+<div class="invalid-feedback">
+  Ingresa tu nombre.
+</div>
+
+<div class="col-md-6">
+ <label for="name2" class="form-label">Segundo nombre</label>
+<input type="text" class="form-control" id="name2" placeholder="Martín"required>
+ </div>
+
+ <div class="col-md-6">
+  <label for="lastname1" class="form-label">Primer apellido*</label>
+<input type="text" class="form-control" id="lastname1" placeholder="Pérez"required>
+ </div>
+ <div class="valid-feedback">
+  Bien
+</div>
+<div class="invalid-feedback">
+  Ingresa tu apellido.
+</div>
+ 
+ <div class="col-md-6">
+<label for="lastname2" class="form-label">Segundo apellido</label>
+ <input type="text" class="form-control" id="lastname2" placeholder="Rodríguez"required>
+  </div>
+                  <div class="col-md-6" id="miUsuario">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="inputEmail" placeholder="juancito@gmail.com" value="" required>
+                  </div>
+                  <div class="valid-feedback">
+                    Bien
+                  </div>
+                  <div class="invalid-feedback">
+                    Ingresa tu email.
+                  </div>
+
+                  <div class="col-md-3">
+                  <label for="codigopais"class="form-label">Código de país</label>
+                  <select class="form-select" id="codigopais">
+                    <option selected value="1" id="uruguay">Uruguay (+598)</option>
+                    <option value="2">Brasil (+55)</option>
+                    <option value="3">Argentina (+54)</option>
+                    <option value="3">Chile (+56)</option>
+                    <option value="3">Paraguay (+595)</option>
+                  </select>
+                </div>
+                  <div class="col-md-3">
+                    <label for="telefono" class="form-label">Teléfono de contacto*</label>
+                    <input type="number" class="form-control" id="telefono" placeholder="099123456"required minlength="9">
+                  </div>
+                  <div class="valid-feedback">
+                    Bien
+                  </div>
+                  <div class="invalid-feedback">
+                    Ingresa tu teléfono.
+                  </div>
+                                 <div class="col-md-9">
+                                  <label for="perfilimg" class="form-label">Imagen de perfil</label>
+                    <input type="file" class="form-control" id="perfilimg" placeholder="juancito.jpg">
+                    
+                  </div>
+                  
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary" id="guardoPerfil">Guardar cambios</button>
+                  </div>
+                </form>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="alert alert-warning alert-dismissible fade" role="alert" id="warning">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+      <div>
+        Debes iniciar sesión
+      </div>
+    </div>
+  </main>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+    </symbol>
+    <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+    </symbol>
+    <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </symbol>
+  </svg>
+    <div class="alert alert-success d-flex alert-dismissible fade" role="alert" id="guardeDatitos">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+      <div>
+        Datos guardados correctamente!
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
+        2022</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/my-profile.js"></script>
+</body>
+
+</html>
